@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Add custom styles here if needed */
+        .video-container {
+            background: url('vid.gif') no-repeat center center;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+        .video-wrapper {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .image-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Landing page -->
+    <section class="landing h-screen text-white bg-black flex items-center justify-start">
+        <div class="title-container h-1/2 mx-16">
+            <h1 class="text-8xl"><span class="txgradient">Technovanza</span></h1>
+            <h1 class="text-8xl">is brewing!</h1>
+            <h2 class="text-4xl">Stay tuned!!!</h2>
+        </div>
+    </section>
+
+    <!-- Common Container for Key Highlights and YouTube Video -->
+    <div class="common-container">
+        <!-- Key Highlights with content -->
+        <section class="text-gray-400 bg-black body-font video-container h-screen">
+            <div class="container px-5 pt-24 mx-auto">
+                <div class="text-center mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4">Key Highlights</h1>
+                    <div class="flex mt-6 justify-center">
+                        <div class="w-16 h-1 rounded-full bg-purple-500 inline-flex"></div>
+                    </div>
+                </div>
+
+                <div class="container px-5 pb-24 mx-auto flex flex-wrap">
+                    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden" data-tilt data-tilt-max="25" data-tilt-speed="100" data-tilt-perspective="20000" data-tilt-glare data-tilt-max-glare="0.5">
+                        <img alt="feature" class="object-cover object-center h-full w-full" width="460" height="270" src="banner.jpg">
+                    </div>
+                    <div class="flex flex-col flex-wrap justify-center lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+                        <div class="flex flex-col mb-10 lg:items-start items-center">
+                            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-purple-400 mb-5">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-grow">
+                                <h2 class="text-white text-lg title-font font-medium mb-3">Purple eye bottle</h2>
+                                <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                                <a class="mt-3 text-purple-400 inline-flex items-center">RSVP
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Images Section -->
+        <div class="container mx-auto px-4 py-5 image-container">
+            <div class="grid grid-cols-5 gap-4">
+                <div class="border border-gray-300 p-4 rounded-md">
+                    <img src="city.png" alt="Image 1" class="w-full h-auto rounded-md">
+                </div>
+                <div class="border border-gray-300 p-4 rounded-md">
+                    <img src="pfp.jpg" alt="Image 2" class="w-full h-auto rounded-md">
+                </div>
+                <div class="border border-gray-300 p-4 rounded-md">
+                    <img src="city.png" alt="Image 3" class="w-full h-auto rounded-md">
+                </div>
+                <div class "border border-gray-300 p-4 rounded-md">
+                    <img src="pfp.jpg" alt="Image 4" class="w-full h-auto rounded-md">
+                </div>
+                <div class="border border-gray-300 p-4 rounded-md">
+                    <img src="city.png" alt="Image 5" class="w-full h-auto rounded-md">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin: 200px 0;"></div>
+   
+    
+<!-- YouTube Video Embed -->
+<section class="text-gray-400 bg-black video-container">
+    <div class="container mx-auto px-4 py-5 flex flex-wrap justify-center items-center">
+        <div class="video-wrapper" style="margin-right: 20px;">
+            <iframe width="1000" height="394" src="https://www.youtube.com/embed/PdZMegceT_E?si=A8UQ27HjvB0QfmgX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="text-center text-white">
+            <h3 class="text-2xl">Watch our latest event video!</h3>
+            <p class="text-lg">Join us in the excitement and relive the moments from our previous events.</p>
+        </div>
+    </div>
+</section>
+
+
+</body>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+</html>
